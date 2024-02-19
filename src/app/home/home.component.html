@@ -1,0 +1,32 @@
+<!-- Image Grid -->
+<div class="container">
+    <div class="row image-grid col-sm-12">
+      <h3>Home</h3>
+      <div *ngFor="let imageUrl of imagesUrl | slice:startPage: endPage; let i = index"
+           class="grid-item col-sm-2"
+           style="margin-top: 2rem">
+        <p-image src="{{imageUrl}}" [preview]="true" alt="Image" width="250">
+          <ng-template pTemplate="indicator">
+            <i class="pi pi-check"></i>
+          </ng-template>
+        </p-image>
+        <button class="btn btn-success" style="margin-top: 1rem" (click)="assignTask(imageUrl)">Assign Task</button>
+      </div>
+    </div>
+</div>
+<p-paginator (onPageChange)="onPageChange($event)"
+             [first]="1" [rows]="1"
+             [totalRecords]="getTotalRecords()">
+</p-paginator>
+
+<!--<div class="container">-->
+<!--  <div class="row image-grid col-sm-12">-->
+<!--    <h3>Assigned Images</h3>-->
+<!--    <div *ngFor="let assign of taskAssignedImage; let i = index">-->
+<!--      <ul>-->
+<!--        <li><a href="#" target="" routerLink="assign">{{assign}}</a></li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+

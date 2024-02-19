@@ -1,0 +1,20 @@
+<!-- Assigned Image -->
+<div class="container">
+  <div class="row image-grid col-sm-12">
+    <h3>Assign</h3>
+    <h6 *ngIf="!assignUrl.length">No image to display</h6>
+    <div *ngFor="let assign of assignUrl | slice:startPage: endPage; let i = index"
+         class="grid-item col-sm-2"
+         style="margin-top: 2rem">
+      <p-image src="{{assign}}" [preview]="true" alt="Image" width="250">
+        <ng-template pTemplate="indicator">
+          <i class="pi pi-check"></i>
+        </ng-template>
+      </p-image>
+    </div>
+  </div>
+</div>
+<p-paginator (onPageChange)="onPageChange($event)" *ngIf="assignUrl.length"
+             [first]="1" [rows]="1"
+             [totalRecords]="getTotalRecords()">
+</p-paginator>

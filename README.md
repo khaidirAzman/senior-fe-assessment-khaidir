@@ -1,27 +1,23 @@
-# SeniorFeAssessment
+👩‍🚀 Senior Front-End Engineer Take-Home Project
+🚀 Image Grid with Angular
+Hello! 👋
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+You are tasked with building an image grid using Angular. The site should display a grid of images, and allow the user to click on an image to view it in full screen. The user can also assign an image to a Task. Once an image is assigned to a task, it can be viewed and browsed through in a separate tab. The image should also no longer appear in the main image grid once it has been assigned to a task.
 
-## Development server
+Your application needs to only support a single task.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+There should be in total 2 main routes: one for the images, and the other for images assigned to a task. All routing should be done within the Angular application.
 
-## Code scaffolding
+The images are provided in the form of .png files in an S3 bucket. Within the S3 bucket, there is a .txt file containing the full list of S3 paths for the images. This .txt file will be provided to you by our HR separately.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Since there are a lot of images and each image is large, you might want to consider paginating the images.
 
-## Build
+📝 You will be assessed on:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+💨 How performant the site is. Take time to consider how to load the images in a way that allows the user to have a seamless experience when browsing the images.
+🌸 The general design of the site with the use of CSS. You may use external design libraries as well (tailwind, shadcn, etc.) as you're comfortable with.
+🐞 The correctness of the site, i.e. no bugs, no broken links, etc.
+Action steps:
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Fork this repository, and commit to your own repo. Once completed, share with us your forked Github URL.
+All the best, and we hope this gives you a flavour of what you'll be doing here! 🔥
