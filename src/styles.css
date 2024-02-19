@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap";
+@import "animate.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+.grid-item {
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.image-item:hover img {
+  transform: scale(1.1);
+}

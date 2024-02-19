@@ -1,0 +1,7 @@
+How to run this project
+
+1) Clone this repo to your local.
+2) Make sure you have npm and node installed in your machine. I'm using npm v9.8.1 and node v18.18.0
+3) run npm install
+4) install Angular CLI globally(if haven't) with command npm install -g @angular/cli@latest
+4) run the application with ng serve --open (or ng s -o)
